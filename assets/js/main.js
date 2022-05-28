@@ -4,11 +4,11 @@ document.querySelector('.tog').addEventListener('click', function () {
     if (check === 1) {
         document.querySelector('.main1').style.width = '100vw';
         check = 0;
-        if (window.screen.width < 500) {
+        if (window.innerWidth < 500) {
             document.querySelector('.main1').style.visibility = 'visible';
         }
     }
-    else if (window.screen.width < 500) {
+    else if (window.innerWidth < 500) {
         document.querySelector('.main1').style.visibility = 'hidden';
         document.querySelector('.navbar-toggler').style.visibility = 'visible';
         check = 1;
@@ -31,7 +31,7 @@ window.addEventListener("resize", function () {
     }
     else {
         document.querySelector('#search-small').style.display = 'none';
-        document.querySelector('#search-big').style.display = 'initial';
+        document.querySelector('#search-big').style.display = 'flex';
     }
     if (check === 1 && window.innerWidth < 650) {
         document.querySelector('.navbar-toggler').click();
