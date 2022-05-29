@@ -624,5 +624,5 @@ tbody {
 .tog-small {
   position: fixed;
   top: 5px;
-  right: 5px;
+  left: 10px;
 }
