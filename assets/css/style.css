@@ -23,7 +23,7 @@ body {
 }
 
 .main1 {
-  min-width: calc(100vw - 230px);
+  min-width: calc(100vw - 200px);
 }
 
 .side-bar {
