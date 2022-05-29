@@ -23,7 +23,7 @@ body {
 }
 
 .main1 {
-  min-width: calc(100vw - 200px);
+  min-width: calc(100vw - 217px);
 }
 
 .side-bar {
@@ -461,6 +461,19 @@ td {
 .form-check-input:checked {
   background-color: #fd683e;
   border-color: #fd683e;
+}
+
+.formaddscript {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.formaddscript input,
+.formaddscript textarea {
+  background-color: #FAFAFA;
+  border: 1px solid #EAEAEA;
 }
 
 .hider {
