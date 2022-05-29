@@ -22,8 +22,14 @@ body {
   display: flex;
 }
 
+.shrink {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .main1 {
-  min-width: calc(100vw - 217px);
+  min-width: calc(100vw - 200px);
 }
 
 .side-bar {
@@ -45,10 +51,10 @@ body {
   font-size: 19px;
 }
 
-
 .tabs {
-  min-width: 200px;
+  width: 200px;
   height: 100vh;
+  flex-shrink: 0;
 }
 
 .tabs ul {
@@ -181,7 +187,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.main2>p:nth-child(2) {
+.main2 > p:nth-child(2) {
   margin-bottom: 20px;
 }
 
@@ -281,11 +287,11 @@ td {
   margin: 15px 0 40px 0;
 }
 
-.foot>div:nth-child(2) {
+.foot > div:nth-child(2) {
   display: flex;
 }
 
-.foot>div:nth-child(2)>p:nth-child(1) {
+.foot > div:nth-child(2) > p:nth-child(1) {
   margin: 0 15px;
 }
 
@@ -443,7 +449,6 @@ td {
 
 .form-buttons {
   display: flex;
-  margin-bottom: 40px;
 }
 
 .add-mod {
@@ -468,12 +473,13 @@ td {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .formaddscript input,
 .formaddscript textarea {
-  background-color: #FAFAFA;
-  border: 1px solid #EAEAEA;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
 }
 
 .hider {
