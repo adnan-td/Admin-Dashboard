@@ -19,21 +19,23 @@
 
 <body>
   <div class="collapse tabs show" id="navbarToggleExternalContent">
-    <h3>Skimminity</h3>
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="./dashboard.html">Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./scripts.html">Scripts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active active-t" href="">Reports</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="./admin.html">Admins</a>
-      </li>
-    </ul>
+    <div class="" id="sb">
+      <h3>Skimminity</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./scripts.html">Scripts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active active-t" href="./reports.html">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./admin.html">Admins</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="main1">
     <nav class="navbar navbar-light bg-light">
@@ -117,8 +119,21 @@
             </ol>
           </nav>
         </div>
-        <div class="edit-users">
-          <a href="./addadmins.html">Newest <i class="fa-solid fa-caret-right"></i></a>
+        <!-- <div class="edit-users">
+          <a href="">Newest <i class="fa-solid fa-caret-right"></i></a>
+        </div> -->
+        <div class="dropdown edit-users">
+          <button class="dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span>Newest</span> <i class="fa-solid fa-caret-right"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-shadow" aria-labelledby="dropdownMenuButton4">
+            <li>
+              <a class="btn btn-light report-old">
+                Oldest
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="table-container">
@@ -221,6 +236,21 @@
     crossorigin="anonymous"></script>
   <!-- My js -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+    let report_old = document.querySelector('.report-old');
+    let report_newest = document.querySelector('#dropdownMenuButton4 span');
+    report_old.addEventListener('click', function () {
+      if (report_old.textContent.includes('Oldest')) {
+        report_old.textContent = 'Newest';
+        report_newest.textContent = 'Oldest';
+      }
+      else {
+        report_newest.textContent = 'Newest';
+        report_old.textContent = 'Oldest';
+      }
+    })
+  </script>
 </body>
 
 </html>

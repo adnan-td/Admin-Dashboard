@@ -6,11 +6,15 @@ document.querySelector('.tog').addEventListener('click', function () {
         check = 0;
         if (window.innerWidth < 500) {
             document.querySelector('.main1').style.visibility = 'visible';
+            document.querySelector('#sb').classList.remove('side-bar');
+            document.querySelector('.navbar-toggler').classList.remove('tog-small');
         }
     }
-    else if (window.innerWidth < 500) {
+    else if (window.innerWidth < 500 && check === 0) {
         document.querySelector('.main1').style.visibility = 'hidden';
         document.querySelector('.navbar-toggler').style.visibility = 'visible';
+        document.querySelector('#sb').classList.add('side-bar');
+        document.querySelector('.navbar-toggler').classList.add('tog-small');
         check = 1;
     }
     else {
