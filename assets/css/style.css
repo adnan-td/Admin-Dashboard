@@ -429,6 +429,9 @@ td {
 
 .card-body {
   padding-top: 0.7rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-body p {
