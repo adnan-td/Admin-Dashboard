@@ -2,12 +2,13 @@
 let check = 1;
 document.querySelector(".tog").addEventListener("click", function () {
   if (check === 1) {
-    document.querySelector(".main1").style.width = "100vw";
+    document.querySelector(".main1").style.width = "100%";
     check = 0;
     if (window.innerWidth < 500 || window.screen.width < 500) {
       document.querySelector(".main1").style.visibility = "visible";
       document.querySelector("#sb").classList.remove("side-bar");
       document.querySelector(".navbar-toggler").classList.remove("tog-small");
+      document.querySelector("body").classList.remove("shrink");
     }
   } else if (
     window.innerWidth < 500 ||
@@ -17,6 +18,7 @@ document.querySelector(".tog").addEventListener("click", function () {
     document.querySelector(".navbar-toggler").style.visibility = "visible";
     document.querySelector("#sb").classList.add("side-bar");
     document.querySelector(".navbar-toggler").classList.add("tog-small");
+    document.querySelector("body").classList.add("shrink");
     check = 1;
   } else {
     check = 1;
