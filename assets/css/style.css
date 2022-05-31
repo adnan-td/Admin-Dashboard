@@ -162,7 +162,7 @@ body {
 }
 
 .nav-user div {
-  background-color: #2bc155;
+  /* background-color: #2bc155; */
   width: 30px;
   border-radius: 50px;
   border: 1px white solid;
@@ -238,7 +238,7 @@ body {
 .verified,
 .active-script,
 .unselected {
-  color: #2bc155;
+  color: #097a00;
   background-color: #e9f9ee;
   font-weight: 300;
   font-size: 14px;
@@ -253,14 +253,14 @@ body {
 
 .super-admin,
 .inactive-script {
-  color: #fd683e;
-  background-color: #ffe5de;
+  color: #df0000;
+  background-color: #fbefef;
   font-weight: 300;
   font-size: 14px;
 }
 
 .users {
-  color: #ffb300;
+  color: #bd6a00;
   background-color: #fdffb6;
   font-weight: 300;
   font-size: 14px;
@@ -415,6 +415,8 @@ td {
   padding: 10px 10px 0 10px;
   border-top-left-radius: 0.9rem;
   border-top-right-radius: 0.9rem;
+  /* change */
+  max-height: 310px;
 }
 
 .card {
@@ -525,6 +527,8 @@ td {
   min-width: 132px;
   justify-content: flex-start;
   align-items: center;
+  /* change */
+  gap: 0.75rem;
 }
 
 .im {
@@ -658,4 +662,11 @@ tbody {
   position: fixed;
   top: 5px;
   left: 10px;
+}
+
+/* change */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
