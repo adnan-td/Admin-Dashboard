@@ -10,6 +10,8 @@ This is one of my first projects ever as a freelancer😎 where I worked with th
 <img src='Preview/image-1.jpg' />
 <img src='Preview/image-2.jpg' />
 <img src='Preview/image-3.jpg' />
+<img src='Preview/image-4.jpg' />
+<img src='Preview/image-5.jpg' />
 
 ## How to Run the project on your Device
 
